@@ -18,12 +18,26 @@ h1, p {
   position: relative;
 }
 
+.hero-sobre {
+  height: 50vh; /* ocupa a tela inteira */
+  width: 100%;
+  background: url("/img/PROJETO-COFFELIFE.png") no-repeat center center/cover;
+  position: relative;
+}
+
+.hero-evento {
+  height: 50vh; /* ocupa a tela inteira */
+  width: 100%;
+  /* background: url("/img/PROJETO-COFFELIFE.png") no-repeat center center/cover; */
+  position: relative;
+}
+
 .hero::after {
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* efeito escuro */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero .container {
