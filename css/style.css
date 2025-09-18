@@ -1,34 +1,39 @@
-body{
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #d1d0a2;
-    padding-top: 70px;    
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #6f4e37; /* marrom café */
+    --secondary-color: #d2b48c; /* bege */
+    --accent-color: #c0a080; /* tom mais claro de marrom */
+    --background-color: #f5f5f5; /* cinza claro */
+    --text-color: #333; /* cinza escuro para texto */
+    --font-family: 'Poppins', sans-serif;
 }
 
 h1, p {
     display: flex;
     justify-content: center;
     align-items: center;
+} 
+
+/* Corpo do site */
+p, body {
+    font-family: 'Fira Sans', sans-serif;
 }
+
+/* Títulos ou elementos que você quer destacar */
+h1, h2, h3, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Botões ou textos menores */
+.btn-dark {
+  font-family: 'Times New Roman', serif;
+}
+
 
 .hero {
   height: 100vh; /* ocupa a tela inteira */
   background: url("/img/graos-cafe.jpg") no-repeat center center/cover;
-  position: relative;
-}
-
-.hero-sobre {
-  height: 50vh; /* ocupa a tela inteira */
-  width: 100%;
-  background: url("/img/PROJETO-COFFELIFE.png") no-repeat center center/cover;
-  position: relative;
-}
-
-.hero-evento {
-  height: 50vh; /* ocupa a tela inteira */
-  width: 100%;
-  /* background: url("/img/PROJETO-COFFELIFE.png") no-repeat center center/cover; */
   position: relative;
 }
 
@@ -49,4 +54,62 @@ h1, p {
     border-bottom: 2px solid #fff;
     color: #fff !important;
     font-weight: bold;
+}
+
+#eventos{
+  background-color: #fafafa;
+}
+
+#sobre {
+  background-color: #e0d9d1fb;
+}
+
+footer{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#btnTopo {
+  position: fixed;     
+  bottom: 20px;        
+  right: 20px;        
+  z-index: 1000;  /* Garante que fique acima de tudo */
+}
+
+#btnTopo button {
+ background-color: #000;      
+  color: #fff;                    
+  border: 2px solid #000;         
+  border-radius: solid 3px #000;            
+  padding: 5px;                   
+  cursor: pointer; 
+  transition: all 0.3s ease;
+}
+
+#btnTopo button:hover {
+  background-color: #fff;         
+  color: #000;                    
+}
+
+#sobre .col-md-6 img{
+  margin-left: 110px;
+}
+
+#sobre .col-md-6:first-child{
+  padding-left: 50px;
+}
+
+#carrosel{
+  max-width: 400px;
+
+}
+
+#carrosel-img {
+    width: 100%; /* faz a imagem preencher o container */
+    height: auto; /* mantém proporção */
 }
